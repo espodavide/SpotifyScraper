@@ -1,0 +1,30 @@
+body {
+    background-color: #2c3e50; /* Colore di sfondo grigio scuro */
+    color: #ecf0f1; /* Testo bianco per contrasto */
+    font-family: 'Arial', sans-serif; /* Usa un font leggibile */
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-8 {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #3498db; /* Colore blu */
+    border: none;
+    margin-top: 20px; /* Aggiunge spazio sopra il pulsante */
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; /* Cambia colore al passaggio del mouse */
+}
+h1{
+    font-size: 1000;
+}

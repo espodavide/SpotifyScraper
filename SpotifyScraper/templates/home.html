@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Spotify to mp3 generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/styles/homepage.css">
+</head>
+<body>
+<script src="../static/js/ForwardNewPage.js"></script>
+<div class="container text-center">
+    <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-md-8">
+            <div class="mb-5">
+                <h1 class="display-20 text-white">Spotify to MP3</h1>
+                <p class="lead text-white">Download all the song of your Spotify playlist  </p>
+            </div>
+
+            <!-- Form -->
+            <form id="Formurl" action="http://127.0.0.1:8080/scrapingDownload" method="post">
+                <div class="form-group">
+                    <label for="url" class="text-white">Paste the  playlist link</label>
+                    <input type="text" class="form-control" id="url" name="url" required/>
+                </div>
+                <button type="button" class="btn btn-primary mr-2"onclick="runningScraping()">Launch process</button>
+
+            </form>
+            <!-- Pulsante di download (generato dinamicamente) -->
+            <div id="downloadButtonContainer" style="display: none;">
+                <button id="downloadButton" class="btn btn-success" onclick="downloadZip()">Download File ZIP</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Loading Modal -->
+    <div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h4>Wait...</h4>
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Wait...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+# Ignora il file di configurazione
+api_config.json
+db_config.json
+
+# Ignora i file di log
+*.log
+
+# Ignore images
+*.png
+
+# Ignore other files txt
+posgres-command.txt
+standalone_admin_password.txt
+
+# Ignora i file generati dall'ambiente di sviluppo
+__pycache__/
+*.pyc
+SpotifyScraperEnv/
+
+# Old files
+OLD/
+
+# Ignora i file generati dall'IDE
+.idea/
+.vscode/
